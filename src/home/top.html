@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PetBeauty</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="src/imagenes/logo_gpi.jpeg">
+  <link rel="stylesheet" href="src/home/top.css" />
+  <script src="src/home/top.js"></script>
+  
+</head>
+<body>
+  <div class="box">
+
+
+    <div class="circle-text-container">
+      <div class="circle-container">
+        <img src="src/imagenes/foto1.avif" alt="Círculo">
+      </div>
+      <p>Dan <br> Williams</p>
+    </div>
+
+    <div class="rectangle-container">
+      <!-- Primera foto de top --> 
+      <img src="src/imagenes/perrotop.jpeg" alt="Perro">
+      <div class="overlay">
+        <!-- Botón para dar like --> 
+        <button class="button-like" id="likeButtonDog" onclick="incrementLikes()">&#x2764;</button>
+        <input type="text" id="commentInput" placeholder="Añadir comentario">
+        <!-- Botón para comentar--> 
+        <button class="button-comment" onclick="addComment('commentInput')">&#x27A4;</button>
+        <div id="commentsContainer"></div>
+        <!-- Barra con likes, comentarios y fecha de la foto --> 
+        <div class="likes" id="likesCount">120 Likes</div>
+        <div class="comments" id="commentsCount">50 Comentarios</div>
+        <div class="date">02/04/2024</div>
+      </div>
+    </div>
+
+    <div class="small-rectangle"></div>
+
+    <div class="circle-text-container">
+      <div class="circle-container">
+        <img src="src/imagenes/perfil2.jpg" alt="Eve">
+      </div>
+      <p>Eve <br> Matthews</p>
+    </div>
+
+    <div class="rectangle-container">
+      <!--  Segunda foto de top--> 
+      <img src="src/imagenes/gato1.jpg" alt="Gato">
+      <div class="overlay">
+        <!-- Botón para dar like --> 
+        <button class="button-like" id="likeButtonCat" onclick="incrementLikesCat()">&#x2764;</button>
+          <input type="text" id="commentInputCat" placeholder="Añadir comentario">
+          <!-- Botón para comentar--> 
+          <button class="button-comment" onclick="addCommentCat('commentInputCat')">&#x27A4;</button>
+          <!-- Barra con likes, comentarios y fecha de la foto --> 
+          <div class="likes" id="likesCountCat">90 Likes</div>
+          <div class="comments" id="commentsCountCat">35 Comentarios</div>
+          <div class="date">30/03/2024</div>
+      </div>
+    </div>
+
+    <div class="small-rectangle-cat"></div>
+  
+  
+    <div class="botones1">
+      <button id="boton-reintentar" style="display: none;">REINTENTAR</button>
+    </div>
+    <div class="botones2">
+      <a href="/src/home/top.html"><button type="submit">TOP</button></a>
+      <a href="/src/home/desafio.html"><button type="submit" style="background-color: #6aba77ba; color: black;">DESAFIO</button></a>
+      <a href="/src/home/mascotas.html"><button type="submit" style="background-color: #6aba77ba; color: black;">MIS MASCOTAS</button></a>
+      <a href="/src/home/perfil.html"><button type="submit" style="background-color: #6aba77ba; color: black;">PERFIL</button></a>
+  </div>
+  </div>
+   
+  <app-root></app-root>
+</body>
+</html>

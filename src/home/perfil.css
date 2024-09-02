@@ -1,0 +1,226 @@
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura del viewport */
+  }
+  
+  
+  .box {
+    background-color: #6aba77ba;
+    border: 2px solid #639f66; /* Borde de la caja */
+    border-radius: 10px; 
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 3.17%; 
+    max-width: 50%;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .circle-text-container {
+    display: flex;
+    width: 500px; /* Ancho del contenedor */
+    height: 250px; /* Altura del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-top: -5%;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  .circle-container {
+    width: 150px; /* Ancho del contenedor */
+    height: 150px; /* Altura del contenedor */
+    border: 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .circle-container img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+
+  .circle-container p {
+    font-size: 13px;
+  }
+
+  .text-container {
+    width: 150px;
+    height: 250px;
+    font-size: 25px;
+    margin-top: 150px;
+    margin-left: 40px;
+  }
+  
+  .fotos{
+    width: 20000px; 
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 50px;
+  }
+
+  .fotos img{
+    width: 350px;
+    height: 300px; /* Altura automática según el ancho */
+    object-fit: cover;
+  }
+
+.botones2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    align-self: flex-end; /* Alinea los botones en la parte inferior */
+    position: absolute; /* Posiciona los botones con respecto al contenedor padre */
+    bottom: -11%; /* Distancia desde la parte inferior de la caja */
+    width: 50%;
+    margin-left: -3%;
+  }
+  
+  .botones2 button {
+    padding: 5px 12px;
+    background-color: #477249;
+    color: white;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+  }
+  
+  .botones2 button:hover {
+    background-color: #477249;
+  }
+  
+  .boton-editar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    align-self: flex-end; /* Alinea los botones en la parte inferior */
+    position: absolute; /* Posiciona los botones con respecto al contenedor padre */
+    bottom: 50%; /* Distancia desde la parte inferior de la caja */
+    width: 50%;
+    margin-left: 11.5%;
+    margin-bottom: 14%;
+  }
+  
+  .boton-editar button {
+    padding: 5px 12px;
+    background-color: #477249;
+    color: white;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+  }
+  
+  .boton-editar button:hover {
+    background-color: #477249;
+  }
+
+  .boton-logout button {
+    background-color: #477249;
+    color: white; /* Icono blanco para contraste */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Hace el botón completamente redondo */
+    width: 50px; /* Tamaño fijo para la anchura, ajustado para contener el icono */
+    height: 50px; /* Tamaño fijo para la altura */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+    display: flex; /* Usa flexbox para centrar el icono */
+    align-items: center; /* Centra verticalmente el contenido del botón */
+    justify-content: center; /* Centra horizontalmente el contenido del botón */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil para profundidad */
+    margin-top: -80%;
+    margin-left: 290%;
+}
+
+.boton-logout button:hover {
+    background-color: #e33e3e; /* Un tono de rojo más oscuro para el efecto hover */
+}
+
+/* Estilo del modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#openModalButton {
+  background-color: #477249;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  align-self: flex-end; /* Alinea los botones en la parte inferior */
+  position: absolute; /* Posiciona los botones con respecto al contenedor padre */
+  bottom: 50%; /* Distancia desde la parte inferior de la caja */
+  margin-right: 23%;
+  margin-bottom: -25%;
+  border-radius: 500px;
+}
+
+.photos-container {
+  margin-left: 6%; /* Ajusta según la alineación deseada */
+  margin-bottom: 15%;
+}
+
+.photos-container img {
+  width: 100%; /* Hace que la imagen sea responsive y se ajuste al ancho del contenedor */
+  max-width: 300px; /* Aumenta el tamaño máximo permitido */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 10px; /* Espacio alrededor de la imagen */
+  border-radius: 12px; /* Esquinas más redondeadas */
+}
+
+.photos-container div {
+  margin-bottom: 25px; /* Espacio debajo de cada conjunto de imagen y descripción */
+}
+
+.photos-container button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.photos-container button:hover {
+  background-color: #ff3333;
+}
+
+
+
+
+
+
+

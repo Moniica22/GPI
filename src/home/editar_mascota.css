@@ -1,0 +1,87 @@
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura del viewport */
+  }
+  
+  .box {
+    background-color: #6aba77ba;
+    border: 2px solid #639f66; /* Borde de la caja */
+    border-radius: 10px; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    max-width: 50%;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+
+  .volver {
+    position: fixed;
+    top: 3%;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #477249;
+    color: #fff;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .volver:hover {
+    background-color: #477249;
+  }
+
+  /* Estilización de títulos para coherencia y foco */
+h2 {
+  text-align: center; /* Centra el título */
+  color: #333;
+  margin-bottom: 10%; /* Espacio después del título */
+}
+
+/* Grupos de formularios para alinear etiquetas y campos */
+.form-group {
+  margin-bottom: 45px; /* Espacio entre grupos de formularios */
+}
+
+.form-group label {
+  display: block; /* Hace que la etiqueta se muestre en bloque */
+  margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+  color: #666; /* Color gris para las etiquetas */
+}
+
+.form-group input[type="text"],
+.form-group input[type="url"] {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 10px; /* Padding suficiente para hacer fácil la entrada de datos */
+  border: 1px solid #ccc; /* Bordes sutiles */
+  border-radius: 4px; /* Bordes redondeados suavemente */
+}
+
+/* Botón de envío estilizado */
+button {
+  width: 100%; /* Ancho completo para llamar la atención */
+  padding: 10px; /* Acolchado adecuado para facilidad de clic */
+  background-color: #4CAF50; /* Verde vibrante para acciones positivas */
+  color: white; /* Contraste alto para legibilidad */
+  border: none; /* Sin borde para estética limpia */
+  border-radius: 4px; /* Consistencia con los campos de entrada */
+  cursor: pointer; /* Indica que es un elemento clickeable */
+  font-size: 16px; /* Tamaño de letra legible */
+}
+
+button:hover {
+  background-color: #45a049; /* Oscurecimiento sutil al pasar el mouse */
+}
+
+/* Mejorar la accesibilidad del formulario al enfocar elementos */
+input:focus,
+button:focus {
+  outline: none; /* Remover el borde de foco predeterminado */
+  border-color: #4CAF50; /* Bordes verdes para indicar foco */
+}

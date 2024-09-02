@@ -1,0 +1,110 @@
+html, body {
+  height: 100%; /* Asegura que el body ocupe toda la altura del viewport */
+}
+
+.container {
+  max-width: 2000px;
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 20%;
+}
+.box {
+  background-color: #6aba77ba;
+  border: 2px solid #639f66; /* Borde de la caja */
+  border-radius: 10px; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+  max-width: 50%;
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.circle-container {
+  width: 300px; /* Ancho del contenedor */
+  height: 300px; /* Altura del contenedor */
+  border-radius: 50%; /* Para que el contenedor sea un círculo */
+  overflow:hidden; /* Oculta el exceso de la imagen */
+  border: 0; 
+}
+
+.circle-container img {
+  width: 100%; /* Asegura que la imagen llene el contenedor */
+  height:max-content; /* Altura automática según el ancho */
+  display:flexbox; /* Quita el espacio adicional debajo de la imagen */
+}
+.container {
+  width: 100%; 
+}
+
+/* Estilos para boton ingresar */
+.botones1 {
+  display: flex;
+  justify-content:right;
+  font-size: 16px;
+  margin-left: 0px;
+  margin-right: 22%;
+}
+
+.botones1 button {
+  padding: 8px 8px;
+  background-color: #477249;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+}
+
+.botones1 button:hover {
+  background-color: #477249;
+
+}
+/* Estilos para los botones */
+.botones2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  margin-right: 15%;
+  margin-left: 15%px;
+  font-size: 15px;
+}
+
+.botones2 button {
+  padding: 6px 6px;
+  background-color: #519955;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botones2 button:hover {
+  background-color: #477249;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.form-group label{
+  width: 500px;
+  font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="password"]  {
+  
+  padding: 10px;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 100px;
+  border: 2px solid #ccc;
+}

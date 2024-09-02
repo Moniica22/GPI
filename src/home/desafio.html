@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PetBeauty</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="src/imagenes/logo_gpi.jpeg">
+  <link rel="stylesheet" href="src/home/desafio.css" />
+  <script src="src/home/desafio.js"></script>
+</head>
+<body>
+<div class="box">
+
+    <h1 class="title">PARECIDOS ASOMBROSOS</h1>
+    <div class="circle-text-container">
+        <div class="circle-container">
+            <img src="src/imagenes/lunajohnson.jpeg" alt="Luna">
+        </div>
+        <p>Luna <br> Johnson</p>
+    </div>
+
+    <div class="rectangle-container">
+        <img src="src/imagenes/desafioperro.jpg" alt="Perro">
+        <div class="overlay">
+          <button class="button-like" id="likeButtonDog" onclick="incrementLikes()">&#x2764;</button>
+          <input type="text" id="commentInput" placeholder="Añadir comentario">
+          <button class="button-comment" onclick="addComment('commentInput')">&#x27A4;</button>
+          <div id="commentsContainer"></div>
+          <div class="desafiolikes" id="likesCount">100 Likes</div>
+          <div class="comments" id="commentsCount">35 Comentarios</div>
+        </div>
+      </div>
+
+    <div class="small-rectangle"></div>
+
+    <div class="circle-text-container">
+        <div class="circle-container">
+            <img src="src/imagenes/maxsmith.jpeg" alt="Max">
+        </div>
+        <p>Max <br> Smith</p>
+    </div>
+
+    <div class="rectangle-container">
+        <img src="src/imagenes/desafiogato.jpg" alt="Gato">
+        <div class="overlay">
+          <button class="button-like" id="likeButtonCat" onclick="incrementLikesCat()">&#x2764;</button>
+            <input type="text" id="commentInputCat" placeholder="Añadir comentario">
+            <button class="button-comment" onclick="addCommentCat('commentInputCat')">&#x27A4;</button>
+            <div class="desafiolikes" id="likesCountCat">40 Likes</div>
+            <div class="comments" id="commentsCountCat">50 Comentarios</div>
+        </div>
+      </div>
+
+    <div class="small-rectangle-cat"></div>
+
+
+    <div class="botones1">
+        <button id="boton-reintentar" style="display: none;">REINTENTAR</button>
+    </div>
+    <a href="src/home/desafioparticipa.html" class="participa-link"><button id="participa-btn" type="submit" class="participa-btn">PARTICIPA</button></a>
+
+    <div class="botones2">
+        <a href="/src/home/top.html"><button type="submit" style="background-color: #6aba77ba; color: black;">TOP</button></a>
+        <a href="/src/home/desafio.html"><button type="submit">DESAFIO</button></a>
+        <a href="/src/home/mascotas.html"><button type="submit" style="background-color: #6aba77ba; color: black;">MIS MASCOTAS</button></a>
+        <a href="/src/home/perfil.html"><button type="submit" style="background-color: #6aba77ba; color: black;">PERFIL</button></a>
+    </div>
+</div>
+
+</body>
+</html>

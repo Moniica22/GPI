@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PetBeauty</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="src/imagenes/logo_gpi.jpeg">
+  <link rel="stylesheet" href="src/home/editprofile.css" />
+</head>
+<body>
+    <div class="box">
+        <a href="src/home/perfil.html"><button class="atras" type="button"> &larr; </button></a>
+        <div class="circle-text-container">
+            <div class="circle-container">
+                <!-- Foto de perfil del usuario--> 
+                <img src="src/imagenes/perfil1.avif" alt="Círculo">
+                <p><strong>Stéphane Duprat</strong></p>
+            </div>
+        </div>
+        <form id="editProfileForm">
+            <div class="atributos">
+                <!-- Info. del usuario --> 
+                <label for="username">Usuario</label>
+                <input type="text" id="username" value="@stephidup" required>
+
+                <label for="location">Ubicación</label>
+                <input type="text" id="location" value="Los Angeles, CA" required>
+                
+                <!-- Check boxes con opciones de cuenta --> 
+                <p>Cuenta privada</p>
+                <div class="checkbox" onclick="toggleCheckbox(1)">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                </div>
+                
+                <p>Notificaciones</p>
+                <div class="checkbox" onclick="toggleCheckbox(2)">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2"></label>
+                </div>
+                
+                <p>Recibir mensajes</p>
+                <div class="checkbox" onclick="toggleCheckbox(3)">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3"></label>
+                </div>
+            </div>
+            <!-- Botón para guardar la información después de actualizarla --> 
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+    
+    <script src="src/home/editprofile.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la altura del viewport */
+  }
+  .box {
+    background-color: #6aba77ba;
+    border: 2px solid #639f66; /* Borde de la caja */
+    border-radius: 10px; 
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 3.17%; 
+    max-width: 50%;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .user-text-container {
+    position: absolute;
+    top: 10%; /* Ajusta la distancia desde la parte superior */
+    left: 40%;
+  }
+  .user-text-container p{
+    margin-left: 10%; /* Ajuste de margen entre el círculo y el texto */
+    margin-top: 0%; /* Ajusta la altura del texto para que coincida con la altura del círculo */
+  }
+  .texto{
+    margin-left: 42%;
+    margin-top: 21%;
+  }  
+  .user-container {
+    width: 18%; /* Ancho del icono */
+    height: 18%; /* Alto del icono */
+    border-radius: 50%; /* Para que el contenedor sea un círculo */
+    overflow: hidden; /* Oculta el exceso de la imagen */
+    border: 0;
+    margin-top: 0%; /* Ajusta la posición vertical del círculo */
+    margin-left: 17%; /* Ajusta la posición horizontal del círculo */
+  }
+
+  .circle-text-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+  }
+
+  .circle-container {
+    width: 70px; /* Ancho del contenedor */
+    height: 70px; /* Altura del contenedor */
+    border-radius: 50%; /* Para que el contenedor sea un círculo */
+    overflow: hidden; /* Oculta el exceso de la imagen */
+    border: 0;
+    margin-top: 5%; /* Ajusta la posición vertical del círculo */
+    margin-left: 130px; /* Ajusta la posición horizontal del círculo */
+  }
+  
+  .circle-container img {
+    width: 100%; /* Asegura que la imagen llene el contenedor */
+    height: max-content; /* Altura automática según el ancho */
+    display: flexbox; /* Quita el espacio adicional debajo de la imagen */
+  }
+  
+
+    .circle-text-container4 {
+      display: flex;
+      align-items: center; /* Alinea verticalmente los elementos */
+    }
+    
+  .circle-container {
+    width: 100px; /* Ancho del contenedor */
+    height: 100px; /* Altura del contenedor */
+    border-radius: 50%; /* Para que el contenedor sea un círculo */
+    overflow: hidden; /* Oculta el exceso de la imagen */
+    border: 0;
+    margin-top: 43; /* Ajusta la posición vertical del círculo */
+    margin-left: 130px; /* Ajusta la posición horizontal del círculo */
+} 
+  
+  .circle-container img {
+    width: 100%; /* Asegura que la imagen llene el contenedor */
+    height: max-content; /* Altura automática según el ancho */
+    display: flexbox; /* Quita el espacio adicional debajo de la imagen */
+  }
+  .mascota-info {
+    background-color: rgb(212, 252, 217);
+    padding: 10px;
+    border: 1px solid #ccc; /* Añade un borde al contenedor */
+    border-radius: 10px; /* Añade esquinas redondeadas */
+    margin-top: 1%; /* Espacio entre cada contenedor de características */
+    margin-left: 20px; /* Ajuste de margen entre el circle-container y el contenedor de mascota-info */
+    width: 500px; /* Ancho del contenedor */
+    height: 143px; /* Alto del contenedor */
+    font-family: "Arial", sans-serif; /* Tipo de letra */
+    font-size: 13px; /* Tamaño de letra */
+    }
+
+  .boton {
+    text-align: center;
+  }
+  
+  .boton a {
+    text-decoration: none;
+  }
+  
+  .boton button {
+    background-color: #477249; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-bottom: 240%; /* Espacio superior */
+    margin-left: 760%;
+    cursor: pointer; /* Cambio de cursor al pasar el mouse */
+    border-radius: 50%; /* Bordes redondeados para hacer el botón redondo */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    line-height: 1; /* Altura de línea para centrar el contenido verticalmente */
+    margin-right: 4px;
+  }
+  
+  .boton button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+  }
+    
+    
+  .botones2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    align-self: flex-end; /* Alinea los botones en la parte inferior */
+    position: absolute; /* Posiciona los botones con respecto al contenedor padre */
+    bottom: -11%; /* Distancia desde la parte inferior de la caja */
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+  .botones2 button {
+    padding: 5px 12px;
+    background-color: #477249;
+    color: white;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+  }
+  
+  .botones2 button:hover {
+    background-color: #477249;
+  }
+    
+  .mascota-info button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    background-color: #477249; /* Azul para editar */
+    cursor: pointer;
+}
+
+.mascota-info button:hover {
+    background-color: #477249;
+}
+
+.circle-text-container {
+  margin-bottom: 50px; /* Puedes ajustar el valor según tu preferencia */
+}
+
+
+
+

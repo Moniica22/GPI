@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PetBeauty</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="src/imagenes/logo_gpi.jpeg">
+  <link rel="stylesheet" href="inicio.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="box">
+    <div class="circle-container">
+      <img src="src/imagenes/logo_gpi.jpeg" alt="PETBEAUTY">
+    </div>
+    <div class="container">
+      <h2>INICIAR SESIÓN</h2>
+      <!-- Inicio de sesión introduciendo usuario y contraseña--> 
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="username" placeholder="Introduzca su usuario">
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="password" placeholder="Introduzca su contraseña">
+      </div>
+      <div id="mensaje"></div>
+    <div class="botones1">
+      <!-- Botón para ingresar --> 
+      <button id="boton-ingresar">INGRESAR</button>
+      <!-- Si no hemos podido ingresar, botón para reintentar--> 
+      <button id="boton-reintentar" style="display: none;">REINTENTAR</button>
+    </div>
+
+      
+      <div class="botones2">
+        <!-- Botones para ir a página de recuperar contraseña o de registro --> 
+        <a href="src/login/contrasena.html"><button type="submit">¿Olvidó su contraseña?</button></a>
+        <a href="src/login/registro.html"><button type="submit"> Registrarse</button></a>
+      </div>
+    </div>
+  </div>
+  <app-root></app-root>
+</body>
+</html>

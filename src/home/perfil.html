@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PetBeauty</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="src/imagenes/logo_gpi.jpeg">
+  <link rel="stylesheet" href="src/home/perfil.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="src/home/top.js"></script>
+  
+</head>
+<body>
+    <div class="box">
+        <div class="circle-text-container">
+            <div class="circle-container">
+                <img src="src/imagenes/perfil1.avif" alt="Círculo">
+                <p>@stephidup</p>
+                <!-- Botón para cerrar sesión -> lleva a página de login  --> 
+                <div class="boton-logout">
+                    <a href="inicio.html">
+                        <button type="submit" title="Cerrar sesión">
+                            <i class="fas fa-sign-out-alt"></i> <!-- Icono para cerrar sesión -->
+                        </button>
+                    </a>
+                </div>
+                <div class="boton-editar">
+                    <!--  Botón editar perfil--> 
+                <a href="src/home/editprofile.html"><button type="submit">EDITAR PERFIL</button></a>
+            </div>
+            </div>
+            <div class="text-container">
+                <!-- Info. del usuario --> 
+            <p> <strong>STÉPHANE DUPRAT</strong> <br>Alberta, CA</p>
+            </div>
+        </div>
+
+            <!-- Botón para abrir el recuadro que permite subir una foto y poner una descripción -->
+    <button id="openModalButton">Subir Foto</button>
+
+    <!-- Modal de subida de fotos -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>¡Sube una foto de tus mascotas!</h2>
+            <form id="uploadForm">
+                <!-- Subir una foto de archivos --> 
+                <input type="file" id="petPhoto" name="petPhoto" accept="image/*" required>
+                <!--Ponerle una descripción a la foto  --> 
+                <input type="text" id="photoDescription" name="photoDescription" placeholder="Descripción..." maxlength="150">
+                <button type="submit">Subir Foto</button>
+            </form>
+        </div>
+    </div>
+    <!-- Recuadro donde aparecen todas las fotos subidas al perfil --> 
+        <div id="photosContainer" class="photos-container"></div>
+        
+
+        <div class="botones2">
+            <a href="/src/home/top.html"><button type="submit" style="background-color: #6aba77ba; color: black;">TOP</button></a>
+            <a href="/src/home/desafio.html"><button type="submit" style="background-color: #6aba77ba; color: black;">DESAFIO</button></a>
+            <a href="/src/home/mascotas.html"><button type="submit" style="background-color: #6aba77ba; color: black;">MIS MASCOTAS</button></a>
+            <a href="/src/home/perfil.html"><button type="submit">PERFIL</button></a>
+        </div>
+    </div>
+    
+</body>
+<script src="src/home/perfil.js"></script>
+</html>
